@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    # 默认开启
+    enabled: true
+    # 默认为/swagger-ui.html
+    path: /swagger-ui.html
+    # 按照字母排序(Controller)
+    tags-sorter: alpha
+    # 按照字母排序(接口方法)
+    operations-sorter: alpha
+    show-extensions: true
+  api-docs:
+    # 默认为/v3/api-docs
+    path: /v3/api-docs
+  # 组配置信息, 也可以使用GroupedOpenApi代码配置
+#  group-configs:
+#    - group: default
+#      paths-to-match: /**
+#      packages-to-scan: com.wangtao.springdoc.controller
